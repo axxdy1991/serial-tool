@@ -180,7 +180,7 @@ function App() {
                 value={selectedPort}
                 onChange={(e) => setSelectedPort(e.target.value)}
                 disabled={isOpen}
-                className="flex-1 bg-[#0f3460] border border-[#0f3460] rounded px-3 py-2 text-sm focus:outline-none focus:border-[#e94560]"
+                className="min-w-0 flex-1 bg-[#0f3460] border border-[#0f3460] rounded px-3 py-2 text-sm focus:outline-none focus:border-[#e94560]"
               >
                 {ports.map(port => (
                   <option key={port} value={port}>{port}</option>
@@ -190,7 +190,7 @@ function App() {
               <button
                 onClick={scanPorts}
                 disabled={isOpen}
-                className="px-3 py-2 bg-[#0f3460] hover:bg-[#e94560] rounded text-sm transition-colors"
+                className="shrink-0 px-3 py-2 bg-[#0f3460] hover:bg-[#e94560] rounded text-sm transition-colors"
                 title="刷新串口列表"
               >
                 🔄
